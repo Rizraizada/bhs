@@ -1,0 +1,151 @@
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: linear-gradient(180deg, #2c3e50 0%, #3498db 100%);
+  color: white;
+  transition: all 0.3s ease;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.collapsed {
+  width: 60px;
+}
+
+.expanded {
+  width: 250px;
+}
+
+.sidebarLogo {
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebarLogo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.collapseBtn {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.collapseBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.menu {
+  padding: 1rem 0;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.menuItem:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-left-color: #e74c3c;
+}
+
+.menuItemActive {
+  background: rgba(255, 255, 255, 0.05);
+  border-left-color: #e74c3c;
+}
+
+.menuIcon {
+  margin-right: 1rem;
+  width: 20px;
+  text-align: center;
+}
+
+.logout {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  margin: 0 1rem;
+  padding: 0.75rem;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logout:hover {
+  background: #c0392b;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 60px;
+  height: 60px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 99;
+  transition: left 0.3s ease;
+}
+
+.topbarExpanded {
+  left: 250px;
+}
+
+.sessionInfo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sessionDetail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2c3e50;
+}
+
+.sessionDetail svg {
+  color: #3498db;
+}
+
+.mainContent {
+  margin-left: 60px;
+  margin-top: 60px;
+  padding: 2rem;
+  transition: margin-left 0.3s ease;
+  width: 100%;
+}
+
+.mainContentExpanded {
+  margin-left: 250px;
+}

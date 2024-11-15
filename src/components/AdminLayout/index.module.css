@@ -1,0 +1,27 @@
+/* Admin layout container styles */
+.container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .contentArea {
+    margin-left: 60px;
+    padding: 20px;
+    flex-grow: 1;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .collapsed .contentArea {
+    margin-left: 60px;
+  }
+  
+  .expanded .contentArea {
+    margin-left: 250px;
+  }
+  
+  .mainContent {
+    padding: 20px;
+    background: white;
+    min-height: 100vh;
+  }
+  

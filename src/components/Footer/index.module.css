@@ -1,0 +1,248 @@
+.footer {
+  position: relative;
+  background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  padding: 60px 0 20px;
+  margin-top: 40px;
+}
+
+.waveDivider {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.waveDivider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+  fill: #1a237e;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 40px;
+}
+
+.logoSection {
+  flex: 1.2;
+}
+
+.schoolName {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.slogan {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #e3f2fd;
+  margin-bottom: 20px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.socialLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.socialLinks a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+.quickLinks {
+  flex: 1;
+}
+
+.quickLinks h3,
+.officialInfo h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.quickLinks h3::after,
+.officialInfo h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background: #64b5f6;
+  border-radius: 2px;
+}
+
+.quickLinks ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quickLinks li {
+  margin-bottom: 12px;
+}
+
+.quickLinks a {
+  color: #e3f2fd;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.quickLinks a:hover {
+  color: #64b5f6;
+  transform: translateX(5px);
+}
+
+.officialInfo {
+  flex: 1;
+}
+
+.officialInfo p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #e3f2fd;
+}
+
+.officialInfo h4 {
+  font-size: 16px;
+  margin: 20px 0 10px;
+  color: #fff;
+}
+
+.icon {
+  margin-right: 8px;
+  opacity: 0.9;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright p {
+  color: #e3f2fd;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.motto {
+  font-style: italic;
+  color: #64b5f6 !important;
+  font-size: 16px !important;
+  margin-top: 10px !important;
+}
+
+.scrollTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background: #64b5f6;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.scrollTopButton:hover {
+  background: #1976d2;
+  transform: translateY(-3px);
+}
+
+.scrollTopButton:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 1024px) {
+  .content {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .logoSection,
+  .quickLinks,
+  .officialInfo {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .quickLinks h3::after,
+  .officialInfo h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .socialLinks {
+    justify-content: center;
+  }
+  
+  .quickLinks ul {
+    text-align: center;
+  }
+  
+  .quickLinks a:hover {
+    transform: translateX(0) translateY(-3px);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+  
+  .schoolName {
+    font-size: 20px;
+  }
+  
+  .content {
+    padding: 0 15px;
+  }
+}

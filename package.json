@@ -1,0 +1,36 @@
+{
+  "name": "city-insurance",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node server.js",
+    "build": "next build",
+    "start": "cross-env NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.5.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-validator": "^7.2.0",
+    "framer-motion": "^11.11.9",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.446.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "next": "^14.2.13",
+    "rc-util": "^5.38.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.3.0",
+    "react-responsive-carousel": "^3.2.23",
+    "sharp": "^0.33.5",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
